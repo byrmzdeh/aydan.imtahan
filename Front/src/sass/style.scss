@@ -1,0 +1,174 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+
+    h1 {
+        color: rgb(58, 24, 66);
+        padding: 30px;
+    }
+
+    .cards {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        .card {
+            width: 340px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid rgb(119, 142, 255);
+
+            .buttons {
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+
+                .add-cart {
+                    cursor: pointer;
+                    width: 110px;
+                    height: 33px;
+                    border: none;
+                    background-color: blue;
+                    font-weight: bolder;
+                    color: white;
+                }
+
+                .delete {
+                    cursor: pointer;
+                    width: 80px;
+                    height: 33px;
+                    border: none;
+                    background-color: rgb(194, 29, 29);
+                    font-weight: bolder;
+                    color: white;
+                }
+            }
+            .wish{
+                border: none;
+                background-color: transparent;
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(80, 80, 224);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+        color: white;
+        font-size: 20px;
+        list-style: none;
+    }
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+            width: 400px;
+            height: 40px;
+        }
+
+        button {
+            width: 130px;
+            height: 30px;
+            background-color: rgb(74, 74, 223);
+            color: white;
+            font-weight: bolder;
+            font-size: 19px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.detail-cart {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.basket {
+    width: 100%;
+
+    table {
+        margin: 50px auto;
+        width: 70%;
+
+        .card {
+            //tr
+            color: black;
+
+            td {
+                text-align: center;
+                color: black;
+
+
+                .delete {
+                    background-color: red;
+                    padding: 16px;
+                    font-size: 19px;
+                    margin: 10px;
+                    border: none;
+                    color: white;
+                }
+            }
+
+            .count {
+                width: 60%;
+                display: flex;
+                justify-content: space-evenly;
+                margin: 100px auto;
+                border: none;
+
+                .minus {
+                    background-color: red;
+                    padding: 16px;
+                    font-size: 19px;
+                    margin: 10px;
+                    border: none;
+                    color: white;
+                }
+
+                .plus {
+                    background-color: rgb(32, 140, 22);
+                    padding: 16px;
+                    font-size: 19px;
+                    margin: 10px;
+                    border: none;
+                    color: white;
+                }
+            }
+
+
+        }
+    }
+
+
+}
